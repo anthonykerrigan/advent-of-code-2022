@@ -1,0 +1,4 @@
+1. Find total number of Elves in Calories List
+    (Each elf is identified by an empty line '\n\n\n')
+    Possible use of Regex to find all \n\n\n instances
+2. Calculate the total value of each Elf's carried calories. 
