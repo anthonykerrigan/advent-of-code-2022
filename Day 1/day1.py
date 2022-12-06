@@ -1,10 +1,18 @@
-import csv
+elflist = open("Calories.txt","r")
 
-class importInput:
-    elf = 0
-    with open('Calories.csv', newline='') as csvfile: 
-        elflist = csv.reader(csvfile, delimiter=',', quotechar='|')
-        for row in elflist:
-            if row in (None, "",[]):
-                elf += 1
-                print("elf "+str(elf))
+#Challenge 1
+#print(max(sum(int(i) for i in x.split ()) for x in elflist.read().split('\n\n')))
+
+#challenge 2
+def top3(f):
+    a = [sum(int(i) for i in x.split()) for x in f.read().split("\n\n")]
+    ans = max(a)
+    a.remove(max(a))
+    ans += max(a)
+    a.remove(max(a))
+    ans += max(a)
+    return ans
+
+print(top3(elflist))
+
+elflist.close()
