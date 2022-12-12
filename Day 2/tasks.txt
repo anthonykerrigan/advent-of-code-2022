@@ -1,0 +1,4 @@
+Assign numerical values to Rock, Paper and Scissors.
+Define a "win"
+Scan the input
+Determine numerical total of your score
